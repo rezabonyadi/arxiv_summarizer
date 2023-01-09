@@ -12,14 +12,18 @@ app.use(cors());
 // Read the API key and server port from the config file
 const config = JSON.parse(fs.readFileSync('config.json'));
 const apiKey = config.openai_api_key;
+//const apiKey = process.env.openai_api_key;
+console.log(`${apiKey}`);
+
 const serverPort = config.server_port;
 
-const gptPrompt = "Summarize this text to three sentences, summarizing the problem it has targetted, the solution it has proposed and how is it novel, and the high-level results it has achieved: "
+const gptPrompt = "Summarize this text to three sentences. First sentence summarizes the problem it has targeted, second sentence summarizes the solution it has proposed and how is it novel, and third sentence summarizes the high-level results, outcome, or conclusion of the proposed solution. Ensure the whole summary is shorter than 70 words. Here is the text: "
 
 
 // Set up the OpenAI API client
 const configuration = new Configuration({
   apiKey: apiKey,
+  organization: "org-2bBPUYeGlPyLBF5gcZuXiVfa",
 });
 const openai = new OpenAIApi(configuration);
 
