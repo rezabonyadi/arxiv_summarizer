@@ -3,6 +3,9 @@ Summarize an abstract by clicking this chrome extension
 
 # Arxiv Abstract Summarizer
 This Chrome extension summarizes abstracts from arxiv.org, making it easier to quickly understand the main points of a research paper.
+![screen_shot](https://user-images.githubusercontent.com/25924343/211269759-c46557be-ae21-47f9-99f0-674bed22e2ba.png)
+
+
 
 # How to use
 - Clone the repository and install the dependencies by running npm install in the root directory of the project.
