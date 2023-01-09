@@ -1,5 +1,7 @@
 # arxiv_summarizer
-Summarize an abstract by clicking this chrome extension
+Arxiv is full of fantastic papers (well, some are more fantastic than others). I have been reading articles from arxiv more than usual, so, to save a bit of time, I wrote this Chrome Extension that summarizes the abstract of the arxiv article by clicking this chrome extension. It summarizes it to three sentences, less than 70 words. First sentence talking about the problem, second talking about the proposal, and third talking about the results/conclusion. 
+
+This is a very simple extension, please do not expect anything fancy.
 
 # Arxiv Abstract Summarizer
 This Chrome extension summarizes abstracts from arxiv.org, making it easier to quickly understand the main points of a research paper.
